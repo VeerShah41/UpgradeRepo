@@ -61,7 +61,7 @@ jobs:
     - name: Flet Build Web
       run: |
         echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}, USER: ${GITHUB_REPOSITORY%/*}, PROJECT_BASE_URL: ${GITHUB_REPOSITORY#*/}"
-        flet build web --base-url ${https://github.com/VeerShah41/UpgradeRepo} --route-url-strategy hash
+        flet build web --base-url https://github.com/VeerShah41/UpgradeRepo --route-url-strategy hash
 
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
